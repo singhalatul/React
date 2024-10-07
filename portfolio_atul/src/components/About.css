@@ -1,0 +1,58 @@
+.hide{
+display:none;
+position:absolute;
+}
+.myHtml:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myCss:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myJava:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myReact:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myNode:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myTail:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myMongo:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+.myC:hover + .hide{
+    display:block;
+    color:black;
+    background-color: white;
+    font-size: x-small;
+}
+
+@media only screen and (max-width:768px) {
+    .myHtml:hover +.hide{
+        display:none;
+    }
+}
