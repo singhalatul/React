@@ -55,4 +55,25 @@ position:absolute;
     .myHtml:hover +.hide{
         display:none;
     }
+    .myCss:hover +.hide{
+        display:none;
+    }
+    .myJava:hover +.hide{
+        display:none;
+    }
+    .myNode:hover +.hide{
+        display:none;
+    }
+    .myMongo:hover +.hide{
+        display:none;
+    }
+    .myC:hover +.hide{
+        display:none;
+    }
+    .myTail:hover +.hide{
+        display:none;
+    }
+    .myReact:hover +.hide{
+        display:none;
+    }
 }

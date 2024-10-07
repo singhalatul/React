@@ -3,6 +3,7 @@ import {Link, NavLink} from 'react-router-dom'
 import {CgNametag} from 'react-icons/cg'
 import { FiAlignJustify } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import Home from '../Home';
 
 export default function Header() {
     const [toggle,setToggle] = useState(false)
@@ -14,6 +15,7 @@ export default function Header() {
         setToggle(false)
     }
     return (
+        <>
         <header className="shadow sticky z-50 top-4 ">
         
                 <div className=" flex flex-wrap mx-auto justify-between items-center max-w-screen-lg lg:flex-row px-4">
@@ -43,7 +45,7 @@ export default function Header() {
                                     to="/project"
                                     className={({isActive}) =>
                                         `block duration-200 ${isActive ? "text-green-500" : "text-white"}  border-gray-100 rounded-full text-xl hover:bg-green-800 hover:text-green-300 px-3 py-2`
-                                        }
+                                }
                                         >
                                         Projects
                                     </NavLink>
@@ -61,9 +63,9 @@ export default function Header() {
                                 <li>
                                     <NavLink
                                     to="/contact"
-                                        className={({isActive}) =>
-                                            `block duration-200 ${isActive ? "text-green-500" : "text-white"}  border-gray-100 rounded-full text-xl hover:bg-green-800 hover:text-green-300 px-3 py-2`
-                                        }
+                                    className={({isActive}) =>
+                                        `block duration-200 ${isActive ? "text-green-500" : "text-white"}  border-gray-100 rounded-full text-xl hover:bg-green-800 hover:text-green-300 px-3 py-2`
+                                }
                                         >
                                         Contact
                                     </NavLink>
@@ -96,8 +98,8 @@ export default function Header() {
                                     to="/project"
                                     className={({isActive}) =>
                                         `block duration-200 ${isActive ? "text-green-500" : "text-white"}  border-gray-100 rounded-full text-xl hover:bg-green-800 hover:text-green-300 px-5 py-2`
-                                        }
-                                        >
+                                }
+                                >
                                         Projects
                                     </NavLink>
                                 </li>
@@ -127,5 +129,7 @@ export default function Header() {
                 
             </div>
         </header>
+        
+    </>
     );
 }

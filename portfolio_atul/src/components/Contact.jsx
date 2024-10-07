@@ -21,9 +21,9 @@ const Contact = () => {
                     <div className='mt-6 overflow-hidden'>
                         <div className='md:grid grid grid-cols-1 md:grid-cols-2 space-y-10'>
                             {/*left side wala */}
-                            <div className=" text-white shadow border-spacing-2 outline-none bg-gray-800 text-sm font-serif rounded-md mt-6 md:h-full h-80">
+                            <div className=" text-white shadow border-spacing-2 outline-none bg-gray-800 text-sm font-serif rounded-md mt-6 md:mt-0 md:h-full h-80">
                                 <h2 className='text-green-300 md:text-xl font-semibold font-serif pl-5 text-start md:pt-8 pt-2 text-sm'>Let`s work together</h2>
-                                <p className="mt-2 pl-5 pr-1 w-full text-start text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique.</p>
+                                <p className="mt-2 pl-5 pr-1 w-full text-start text-sm">I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out.</p>
                                 <form className="md:space-y-5 md:mt-9 md:mb-7 space-y-3 mt-3 mb-2 ">
                                     <div className="flex space-x-10 items-center justify-center px-4 ">
                                         <input

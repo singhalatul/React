@@ -22,9 +22,9 @@ const About = () => {
                     </div>
                 </div>
                 {/*cards */}
-                <div className="md:grid md:grid-cols-2 md:mt-7 overflow-y-scroll hover:overflow-scroll scrollbar h-80 md:w-full  mt-5">
+                <div className="md:grid md:grid-cols-1 md:mt-7 overflow-y-scroll hover:overflow-scroll scrollbar h-80 md:w-full  mt-5 space-y-2">
                         {/*card-1*/}
-                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 lg:w-60 lg:h-36 md:w-44 md:h-36 w-full h-32 md:mt-0'>
+                        <div className='bg-gray-800 shadow-lg rounded-md mr-2  w-full h-32 md:mt-0'>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                                 <h1>Btech</h1>
                                 <p className="text-center font-serif text-sm">JECRC College, Jaipur(2024)</p>
@@ -33,7 +33,7 @@ const About = () => {
                             </div>
                         </div>
                         {/*card-2*/}
-                        <div className='bg-gray-800 md:ml-2 shadow-lg rounded-md lg:w-60 lg:h-36 md:w-44 md:h-36 w-full h-32 md:mt-0 mt-3'>
+                        <div className='bg-gray-800  shadow-lg rounded-md  w-full h-32 md:mt-0 mt-3'>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                             <h1>12th</h1>
                             <p className="text-center font-serif text-sm">Disha senior sec. School(2019)</p>
@@ -42,7 +42,7 @@ const About = () => {
                             </div>
                         </div>
                         {/*card-3*/}
-                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 lg:w-60 lg:h-36 md:w-44 md:h-36 mt-3 w-full h-32 '>
+                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 mt-3 w-full h-32 '>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                             <h1>10th</h1>
                             <p className="text-center font-serif text-sm">St.xavier`s sec school(2017)</p>
@@ -50,8 +50,21 @@ const About = () => {
                                 <h3 className="text-center font-serif text-sm">Per:84.50%</h3>
                             </div>
                         </div>
+                </div>
+            </div>
+        ),
+        training: (
+            <div className="education">
+                <div className='space-y-3 tracking-tight'>
+                    <h2 className="text-2xl font-semibold font-mono ">My education</h2>
+                    <div className="md:w-72 w-56">
+                        <p className="text-xs">Describing my education details and training took in journey of my Btech.</p>
+                    </div>
+                </div>
+                {/*cards */}
+                <div className="md:grid md:grid-cols-1 md:mt-7 overflow-y-scroll hover:overflow-scroll scrollbar h-80 md:w-full  mt-5">
                         {/*card-4*/}
-                        <div className='bg-gray-800 md:ml-2 shadow-lg rounded-md lg:w-60 lg:h-36 md:w-44 md:h-36 mt-3 w-full h-32'>
+                        <div className='bg-gray-800  shadow-lg rounded-md w-full h-32'>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                             <h1>Training</h1>
                             <p className="text-center font-serif text-sm">ServiceNow(sep 2023)</p>
@@ -60,7 +73,7 @@ const About = () => {
                             </div>
                         </div>
                         {/*card-5*/}
-                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 lg:w-60 lg:h-36 md:w-44 md:h-36 sm:w-42 mt-3 w-full h-32'>
+                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 mt-3 w-full h-32'>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                             <h1>Training</h1>
                             <p className="text-center font-serif text-sm">Regex Software(2022)</p>
@@ -69,18 +82,12 @@ const About = () => {
                             </div>
                         </div>
                         {/*card-6*/}
-                        <div className='bg-gray-800 md:ml-2 shadow-lg rounded-md lg:w-60 lg:h-36 md:w-44 md:h-36 mt-3 w-full h-32'>
+                        <div className='bg-gray-800  shadow-lg rounded-md mt-3 w-full h-32'>
                             <div className="flex flex-col justify-center items-center h-full w-full">
                             <h1>Training</h1>
                             <p className="text-center font-serif text-sm">Matrix(2021)</p>
                                 {/* <h2 className="text-center">schooling</h2> */}
                                 <h3 className="text-center font-serif text-sm">Cert: C,C++,DSA</h3>
-                            </div>
-                        </div>
-                        {/*card-7*/}
-                        <div className='bg-gray-800 shadow-lg rounded-md mr-2 lg:w-60 lg:h-36 md:w-44 md:h-36 sm:w-42 mt-3 w-full h-32'>
-                            <div className="flex flex-col justify-center items-center h-full w-full">
-                                ...
                             </div>
                         </div>
                 </div>
@@ -91,7 +98,10 @@ const About = () => {
                 <div className="tracking-tighter space-y-3">
                     <h2 className='text-2xl font-semibold font-mono'>My Skills</h2>
                     <div className="md:w-72 w-56">
-                            <p className="text-xs tracking-wider">Technologies in which i do masters during my Btech Journey</p>
+                            <p className="text-xs tracking-wider">
+Frontend Development: Crafting responsive and user-friendly interfaces using React, HTML, CSS, and Tailwind.<br></br>
+Backend Development: Building robust server-side applications with Node.js and managing databases with MongoDB.<br></br>
+Programming Languages: Proficient in C++, leveraging its power for performance-critical applications.</p>
                     </div>
                 </div>
             
@@ -100,24 +110,24 @@ const About = () => {
                     <div className="space-y-2">
                         <div className="grid grid-cols-4 ">
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 md:mr-2 shadow-xl bg-gray-800 grid place-items-center rounded-xl "><FaHtml5 className='myHtml' size={28}  onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-24 font-bold tracking-widest'>HTML</div>
+                            <div className='hide top-72 font-bold tracking-widest'>HTML</div>
                             </div>
-                            <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl"><FaCss3 className='myCss' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-24 font-bold tracking-widest'>CSS</div></div>
+                            <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl"><FaCss3 className='myCss ' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
+                            <div className='hide top-72 font-bold tracking-widest'>CSS</div></div>
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl "><RiJavascriptFill className='myJava' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-24 font-bold tracking-widest'>Javascript</div></div>
+                            <div className='hide top-72 font-bold tracking-widest'>Javascript</div></div>
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl"><FaReact className="myReact" size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-24 font-bold tracking-widest'>React.js</div></div>
+                            <div className='hide top-72 font-bold tracking-widest'>React.js</div></div>
                         </div>
                         <div className="grid grid-cols-4">
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl "><FaNode className='myNode' size={32} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-48 font-bold tracking-widest'>Node.js</div></div>
+                            <div className='hide md:top-96 font-bold tracking-widest'>Node.js</div></div>
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl "><RiTailwindCssFill className='myTail' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-48 font-bold tracking-widest'>Tailwind</div></div>
+                            <div className='hide md:top-96 font-bold tracking-widest'>Tailwind</div></div>
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl myMongo"><SiMongodb className='myMongo' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-48 font-bold tracking-widest'>MongoDB</div></div>
+                            <div className='hide md:top-96 font-bold tracking-widest'>MongoDB</div></div>
                             <div className="lg:w-24 lg:h-24 md:h-24 md:w-20 shadow-xl bg-gray-800 grid place-items-center rounded-xl "><SiCplusplus className='myC' size={28} onMouseOver={({target})=>target.style.color="#22c55e"} onMouseOut={({target})=>target.style.color="white"}/>
-                            <div className='hide top-48 font-bold tracking-widest'>C++</div></div>
+                            <div className='hide md:top-96 font-bold tracking-widest'>C++</div></div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +195,7 @@ const About = () => {
     };
     
     return (
-        <div className='relative w-full h-screen '>
+        <div className='relative w-full h-full overflow-y-scroll md:overflow-hidden scrollbar'>
             <div className="md:max-w-screen-lg max-w-screen-sm mx-auto md:mt-20 mt-8 ">
                 <div className='text-white px-5 md:grid md:grid-cols-2 grid grid-cols-1'>
                     {/* left-side*/}
@@ -194,24 +204,27 @@ const About = () => {
                             <h1 className='text-white md:text-4xl text-2xl font-semibold font-serif tracking-widest'>Why&nbsp;&nbsp;Hire&nbsp;&nbsp;me?</h1>
                             {/*paragraph*/}
                             <div className="md:w-72 w-52">
-                                <p className='md:text-sm text-xs w-full pr-2 text-wrap text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis </p>
+                                <p className='md:text-sm text-xs w-full pr-2 text-wrap text-gray-300'>Choosing the right developer is crucial for the success of your project. Here’s why I believe I would be a great fit for your team </p>
                             </div>
                             {/*button  */}
                             <div className='md:w-80 pt-4 w-56 space-y-4'>
                                 <button 
                                 onClick={()=>handleButtonClick('education')}
-                                className="text-white bg-gray-900 hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 hover:text-black font-semibold w-full items-center py-1">Education</button>
+                                className="text-white bg-gray-900 hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 hover:text-black font-semibold w-full items-center py-1">EDUCATION</button>
+                                <button 
+                                onClick={()=>handleButtonClick('training')}
+                                className="text-white bg-gray-900 hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 hover:text-black font-semibold w-full items-center py-1">TRAINING & CERTIFICATES</button>
                                 <button 
                                 onClick={()=>handleButtonClick('skills')}
-                                className="text-white bg-gray-900 hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 w-full items-center py-1 font-semibold hover:text-black">skills</button>
+                                className="text-white bg-gray-900 hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 w-full items-center py-1 font-semibold hover:text-black">SKILLS</button>
                                 <button
                                 onClick={()=>handleButtonClick('about')} 
-                                className={`text-white bg-gray-900  hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 w-full items-center py-1 font-semibold hover:text-black`}>About me</button>
+                                className={`text-white bg-gray-900  hover:bg-green-500 ring-2 ring-green-300 ring-inset ring-opacity-25 rounded-lg hover:ring-green-500 w-full items-center py-1 font-semibold hover:text-black`}>ABOUT ME</button>
                             </div>
                         </div>
                     </div>
                     {/*right-side*/}
-                    <div className="lg:w-full md:w-full  w-full md:place-items-start md:grid place-items-center grid md:mt-0 mt-5 ">
+                    <div className="lg:w-full md:w-full  w-full md:place-items-start md:grid place-items-center grid md:mt-0 mt-5 mb-16  md:mb-0">
                         <div className="space-x-4">
                             {sections[activeSection]}
                         </div>

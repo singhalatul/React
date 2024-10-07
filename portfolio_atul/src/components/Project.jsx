@@ -74,7 +74,7 @@ const Project = () => {
     const { title, description, tech, image,href,comming} = sections[activePage - 1];
 
     return (
-        <div className='relative lg:max-w-screen-lg lg:mx-auto md:top-28 md:max-w-screen-md md:mx-auto mt-8'>
+        <div className='relative lg:max-w-screen-lg lg:mx-auto md:top-28 md:max-w-screen-md md:mx-auto mt-8 h-full overflow-y-scroll md:overflow-hidden scrollbar'>
             <div className='md:flex md:flex-row ml-5 space-y-6'>
                 <div className='space-y-3 mr-7 md:flex-initial md:w-5/12'>
                     <h1 className='text-7xl text-white font-mono'>{String(activePage).padStart(2, '0')}<span className="text-sm text-slate-500 md:pl-5 pl-1">{comming}</span></h1>
@@ -86,11 +86,11 @@ const Project = () => {
                         <FaGithub size={28} />
                     </a>
                 </div>
-                <div className="border border-white md:w-7/12 mr-5 mt-6 md:mt-0">
+                <div className="border border-white md:w-7/12 mr-5 mt-6 md:mt-0 ">
                     <img src={image} alt={`Project ${activePage}`} />
                 </div>
             </div>
-            <div className='text-black flex justify-end space-x-2 mt-2 text-md font-mono mr-5'>
+            <div className='text-black flex justify-end space-x-2 mt-2 text-md font-mono mr-5 mb-20 ms:mb-0'>
                 <button onClick={handlePrev} disabled={activePage === 1} className={`bg-green-500 w-8 h-8 flex items-center justify-center ${activePage === 1 ? 'bg-gray-800 cursor-not-allowed' : ''}`}>
                     <FaChevronLeft />
                 </button>
