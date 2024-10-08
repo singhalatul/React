@@ -40,7 +40,9 @@ function App() {
   // console.log(randomNumber);
   return (
     <>
-      <div className="text-orange-500 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-700">
+    <div className=" bg-hero-pattern bg-cover bg-center bg-no-repeat h-screen w-full flex flex-wrap">
+      <div className="w-full">
+      <div className=" text-orange-500 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-700">
         <h1 className="text-white text-center mb-3">Password generator</h1>
         <div className="flex shadow-lg rounded-lg w-full overflow-hidden">
           <input
@@ -80,6 +82,8 @@ function App() {
         </div>
         
       </div>
+          </div>
+          </div>
     </>
   )
 }

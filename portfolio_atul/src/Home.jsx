@@ -6,9 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Photo from './components/Photo';
-import About from './components/About';
-import Project from './components/Project';
-import Contact from './components/Contact';
 
 const Home = () => {
     const [project,setProject] = useState(0);
@@ -30,7 +27,7 @@ const Home = () => {
         setTimeout(()=>{
             let n=0,p=0;
             setExperience((n)=> n<1 ? n+=1 :n);
-            setProject((n)=> n<10 ? n+=1 :n);
+            setProject((n)=> n<9 ? n+=1 :n);
             setTechnology((p)=>p<8 ?p+=1:p)
             
         },200)
@@ -82,7 +79,7 @@ const Home = () => {
                         <div>Total&nbsp;<br></br>Experience</div>
                     </div>
                     <div className='text-white flex items-center space-x-2'>
-                        <div className="text-5xl ">{project}</div>
+                        <div className="text-5xl ">0{project}</div>
                         <div>Projects<br/>Completed</div>
                     </div>
                     <div className='text-white flex items-center space-x-2'>

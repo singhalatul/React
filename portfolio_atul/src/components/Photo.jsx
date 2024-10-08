@@ -14,8 +14,8 @@ const Photo = () => {
                     }}}
                         className="w-80 h-80 md:w-[365px] md:h-[365px] rounded-full absolute md:top-2 md:right-2 top-2 left-3"
                     >
-                    {/* <img src="atul.jpg" */}
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727049600&semt=ais_hybrid" 
+                    {/*<img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727049600&semt=ais_hybrid"*/} 
+                    <img src="./atul3_cleanup.jpg"
                     priority="true" 
                     quality={100} 
                     fill="true"
